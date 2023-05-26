@@ -5,6 +5,7 @@ body {
 }
 
 .preheader {
+  width: 100%;
   height: 48px;
   background-color: #35b8be;
   display: flex;
@@ -68,6 +69,16 @@ nav > ul > li > a {
   line-height: 20px;
   text-decoration: none;
   color: #28224b;
+}
+
+.navChecked {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #35b8be;
 }
 
 nav > ul > li > a:checked {
@@ -404,6 +415,8 @@ nav > ul > li > a:checked {
 
 .support {
   display: flex;
+  margin-top: 150px;
+  margin-bottom: 60px;
 }
 
 .support .half {
@@ -483,4 +496,137 @@ nav > ul > li > a:checked {
 .socialNetworksConainer > img {
   padding-right: 20px;
   cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width: 970px) {
+  .container {
+    margin: 0 20px;
+  }
+  .mainContent {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .half {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .menuItems {
+    display: block;
+    width: 100%;
+  }
+
+  .menuItem {
+    width: 100%;
+  }
+
+  .orders {
+    display: block;
+  }
+
+  .supportTextContainer {
+    position: absolute;
+    top: 0px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .support {
+    display: block;
+  }
+
+  .supportTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .howItWorks > .list {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .howItWorks > .list > .item {
+    width: 100%;
+  }
+
+  .menuButtons {
+    display: block;
+    width: 100%;
+    margin: 50px auto 40px auto;
+  }
+
+  .menuButton {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  /* .logoContainer,
+  .cartContainer {
+    display: none;
+  } */
+
+  nav > ul {
+    display: none;
+  }
+
+  .menuSubtitleContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .menuItem {
+    display: block;
+    height: auto;
+  }
+
+  .menuItemImage {
+    width: 100%;
+  }
+
+  .supportTextContainer {
+    position: absolute;
+    top: 0px;
+    margin-top: 00px;
+    text-align: center;
+  }
+
+  .supportTitle {
+    font-size: 20px;
+  }
+
+  .supportButton {
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #35b8be;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 10px;
+  }
+
+  .menuItemImage {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .support .half {
+    padding: 0px;
+  }
+
+  .preheaderText,
+  .preheaderLink {
+    font-size: 11px;
+  }
 }
